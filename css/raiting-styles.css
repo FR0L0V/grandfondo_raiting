@@ -1,0 +1,387 @@
+/* стили блока #raiting */
+ 
+#raiting{
+   width:100%;
+   background-color:#FFFFFF;
+   position:relative;
+}
+
+.raiting-background{
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background-image: url('../images/registration-banner.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   -webkit-clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+           clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.raiting-orange-background{
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background-color: rgba(255, 96, 0, 0.91);
+   -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 90%);
+           clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.raiting-content{
+   z-index:10;
+   width:100%;
+   height:100%;
+   background-color: #FFFFFF;
+   margin-top: 130px;
+   margin-bottom: 70px;
+   padding:40px 96px;
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex; 
+   -webkit-box-orient: vertical; 
+   -webkit-box-direction: normal; 
+       -ms-flex-direction: column; 
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -webkit-clip-path: polygon(0% 0%, 100% 3%, 100% 99%, 0% 100%);
+           clip-path: polygon(0% 0%, 100% 3%, 100% 99%, 0% 100%);
+}
+
+.raiting-title{
+   margin-bottom: 60px;
+}
+
+.raiting-form{
+   width:100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+
+.raiting-form__filter{
+   width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+  
+}
+
+.raiting-form__filter .search{
+   width: 480px;
+   margin-right: 16px;
+}
+
+.raiting-form__filter .search input{
+   font-family: Gill Sans;
+   font-size: 15px;
+   line-height: 17px;
+   letter-spacing: 0.02em;
+   border: 1px solid rgba(40, 40, 40, 0.7);
+   padding: 8px 14px;
+}
+
+.raiting-form__filter .search input::-webkit-input-placeholder{
+   color: rgba(40, 40, 40, 0.7);
+}
+
+.raiting-form__filter .search input::-moz-placeholder{
+   color: rgba(40, 40, 40, 0.7);
+}
+
+.raiting-form__filter .search input:-ms-input-placeholder{
+   color: rgba(40, 40, 40, 0.7);
+}
+
+.raiting-form__filter .search input::-ms-input-placeholder{
+   color: rgba(40, 40, 40, 0.7);
+}
+
+.raiting-form__filter .search input::placeholder{
+   color: rgba(40, 40, 40, 0.7);
+}
+
+.search{
+   position: relative;
+}
+
+.search input{
+   width:100%;
+   height:100%;
+}
+
+.search::after{
+   content:"";
+   width:14px;
+   height:14px;
+   position: absolute;
+   right:14px;
+   top:10px;
+   background-image: url('../images/search-icon.svg');
+   z-index: 10000;
+}
+
+.table{
+   width:100%;
+   display:table;
+  
+}
+
+.table__row, .table__header-row{
+   display: table-row;
+}
+
+.table__column{
+   display:table-cell;
+   height:100%;
+   vertical-align: middle;
+}
+
+.raiting-form__table{
+   margin-top: 30px;
+   width: 100%;
+   height: 276px;
+   overflow-y: scroll;
+   margin-bottom: 30px;
+   padding-right:15px;
+   scrollbar-base-color: #FFFFFF;
+   scrollbar-face-color: #000;
+   scrollbar-track-color: #FFFFFF;
+   scrollbar-arrow-color: #FFFFFF;
+}
+
+.raiting-form__table.show-full-table{
+   height:100%;
+   overflow-y: hidden;
+}
+
+.raiting-form__table::-webkit-scrollbar { 
+   width: 2px; 
+}
+
+.raiting-form__table::-webkit-scrollbar-thumb { 
+   background: #282828;
+}
+
+.raiting-form__table .table__header-row {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 21px;
+   letter-spacing: 0.02em;
+   color: #282828;
+   text-transform: uppercase;
+}
+
+.raiting-form__table .table__header-row .table__column{
+   padding-bottom: 10px;
+   text-align:center;
+}
+
+.raiting-form__table .table__row .table__column{
+   padding: 12px 0;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   font-size: 15px;
+   line-height: 17px;
+   color: #282828;
+   text-align:center;
+}
+
+.raiting-form__table .table__row .table__column:nth-child(2){
+   position: relative;
+}
+
+.raiting-form__table .table__row .table__column:nth-child(2)::after{
+   position: absolute;
+   content:"";
+   width:16px;
+   height:41px;
+   background-color: #FFFFFF;
+   bottom:-2px;
+   right:0px;
+}
+
+.raiting-form__table .table__header-row .table__column:nth-child(1),
+.raiting-form__table .table__row .table__column:nth-child(1){
+   width: 21px;
+}
+
+.raiting-form__table .table__header-row .table__column:last-child{
+   width: 144px;
+}
+
+.filter-buttons{
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-buttons__block{
+   width:42px;
+   height:34px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 21px;
+   color: rgba(40, 40, 40, 0.2);
+   border:1px solid rgba(40, 40, 40, 0.2);
+   border-right: none;
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+
+.filter-buttons a:last-child .filter-buttons__block{
+   border-right:1px solid rgba(40, 40, 40, 0.2);
+}
+
+.filter-buttons__block.active-button{
+   background-color: #F9650B;
+   color: #FFFFFF;
+   border: 1px solid #F9650B;
+   width: 44px;
+   height: 36px;
+}
+
+.show-less{
+   display:none;
+}
+
+.show-less a img{
+   -webkit-transform: rotate(180deg);
+       -ms-transform: rotate(180deg);
+           transform: rotate(180deg);
+}
+
+@media (max-width: 904px) {
+
+   #raiting .container{
+      max-width: 624px;
+   }
+
+   .raiting-content{
+      padding: 0 118px;
+      padding-top: 74px;
+      padding-bottom: 80px;
+      margin-top: 155px;
+      margin-bottom: 90px;
+   }
+
+   .raiting-form__table{
+      padding-right: 10px;
+   }
+
+   .raiting-form__table .table__header-row .table__column:last-child{
+      width: 60px;
+   }
+
+}
+
+@media (max-width: 600px) {
+
+   #raiting .container{
+      width:100%;
+   }
+
+   .raiting-orange-background{
+      -webkit-clip-path: polygon(0% 20vw, 100% 0%, 100% 98%, 0% 94%);
+              clip-path: polygon(0% 20vw, 100% 0%, 100% 98%, 0% 94%);
+   }
+
+   .raiting-background{
+      -webkit-clip-path: polygon(0% 0%, 100% 20vw, 100% 100%, 0% 100%);
+              clip-path: polygon(0% 0%, 100% 20vw, 100% 100%, 0% 100%);
+   }
+
+   .raiting-title{
+      margin-bottom: 40px;
+   }
+
+   .raiting-form__filter{
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+   .raiting-form__filter .search{
+      width:100%;
+   }
+
+   .raiting-content{
+      padding:60px 55px;
+      margin-top: 100px;
+      margin-bottom: 70px;
+   }
+
+   .filter-buttons{
+      width:100%;
+      margin-top:10px;
+   }
+
+   .filter-buttons a{
+      width:100%;
+   }
+
+   .filter-buttons__block, .filter-buttons__block.active-button{
+      width:100%;
+   }
+
+   .raiting-form__table{
+      margin-top: 40px;
+   }
+
+   .raiting-form__table .table__row .table__column:nth-child(2){
+      padding-right: 6px;
+   }
+
+   .raiting-form__table .table__row .table__column:nth-child(2)::after{
+      width:6px;
+   }
+
+}
+
+@media (max-width:370px){
+
+   .raiting-content{
+      padding: 50px 11px;
+      padding-bottom:70px;
+      margin-bottom: 85px;
+   }
+}

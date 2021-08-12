@@ -21,8 +21,13 @@
 }
 
 .raiting-background.expand{
-   -webkit-clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
-           clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
+   background-image: url('../images/registration-banner_top.jpg'),
+   url('../images/registration-banner_bottom.jpg');
+   background-size: contain, contain;
+   background-repeat: no-repeat, no-repeat;
+   background-position: top, bottom;
+   -webkit-clip-path: polygon(0% 0%, 100% 100px, 100% 100%, 0% 100%);
+           clip-path: polygon(0% 0%, 100% 100px, 100% 100%, 0% 100%);
 }
 
 .raiting-orange-background{
@@ -37,8 +42,9 @@
 }
 
 .raiting-orange-background.expand{
-   -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 97%);
-           clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 97%);
+   background-color: rgba(255, 96, 0, 1);
+   -webkit-clip-path: polygon(0% 100px, 100% 0%, 100% 100%, 0% 99%);
+           clip-path: polygon(0% 100px, 100% 0%, 100% 100%, 0% 99%);
 }
 
 .raiting-content{
@@ -64,6 +70,11 @@
            justify-content: space-between;
    -webkit-clip-path: polygon(0% 0%, 100% 3%, 100% 99%, 0% 100%);
            clip-path: polygon(0% 0%, 100% 3%, 100% 99%, 0% 100%);
+}
+
+.raiting-content.expand{
+   -webkit-clip-path: polygon(0% 0%, 100% 20px, 100% 99.6%, 0% 100%);
+           clip-path: polygon(0% 0%, 100% 20px, 100% 99.6%, 0% 100%);
 }
 
 .raiting-title{

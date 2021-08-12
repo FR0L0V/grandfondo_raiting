@@ -54,6 +54,7 @@ $(document).ready(function(){
         $('.raiting-form__table').addClass('show-full-table');
         $('.raiting-background').addClass('expand');
         $('.raiting-orange-background').addClass('expand');
+        $('.raiting-content').addClass('expand');
         $('.show-more').hide();
         $('.show-less').show();
     }
@@ -62,6 +63,7 @@ $(document).ready(function(){
         $('.raiting-form__table').removeClass('show-full-table');
         $('.raiting-background').removeClass('expand');
         $('.raiting-orange-background').removeClass('expand');
+        $('.raiting-content').removeClass('expand');
         $('.show-less').hide();
         $('.show-more').show();
     }

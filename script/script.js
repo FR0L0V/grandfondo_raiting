@@ -52,12 +52,16 @@ $(document).ready(function(){
 
     function showMore(){
         $('.raiting-form__table').addClass('show-full-table');
+        $('.raiting-background').addClass('expand');
+        $('.raiting-orange-background').addClass('expand');
         $('.show-more').hide();
         $('.show-less').show();
     }
 
     function showLess(){
         $('.raiting-form__table').removeClass('show-full-table');
+        $('.raiting-background').removeClass('expand');
+        $('.raiting-orange-background').removeClass('expand');
         $('.show-less').hide();
         $('.show-more').show();
     }

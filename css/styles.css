@@ -372,6 +372,8 @@ nav.menu{
    width:100%;
    background:-o-linear-gradient(top, rgba(0, 0, 0, 0.64) 50.69%, rgba(0, 0, 0, 0) 99.99%), 
               url('../images/main-banner.jpg') ;
+   background:-o-linear-gradient(top, rgba(0, 0, 0, 0.64) 50.69%, rgba(0, 0, 0, 0) 99.99%), 
+              url('../images/main-banner.jpg') ;
    background:-webkit-gradient(linear, left top, left bottom, color-stop(50.69%, rgba(0, 0, 0, 0.64)), color-stop(99.99%, rgba(0, 0, 0, 0))), 
               url('../images/main-banner.jpg') ;
    background:-o-linear-gradient(top, rgba(0, 0, 0, 0.64) 50.69%, rgba(0, 0, 0, 0) 99.99%), 
@@ -1296,6 +1298,10 @@ footer{
       margin-bottom: 32px;
    }
 
+   .contacts-info .feedback__cl:nth-child(2){
+      padding-left:20px;
+   }
+
    .feedback__cl{
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1355,5 +1361,9 @@ footer{
 
    .agreements p{
       width:100%;
+   }
+
+   .contacts-info .feedback__cl:nth-child(2){
+      padding-left:17px;
    }
 }

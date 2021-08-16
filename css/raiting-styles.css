@@ -43,8 +43,8 @@
 
 .raiting-orange-background.expand{
    background-color: rgba(255, 96, 0, 1);
-   -webkit-clip-path: polygon(0% 100px, 100% 0%, 100% 100%, 0% 99%);
-           clip-path: polygon(0% 100px, 100% 0%, 100% 100%, 0% 99%);
+   -webkit-clip-path: polygon(0% 100px, 100% 0%, 100% 100%, 0% calc(100% - 55px));
+           clip-path: polygon(0% 100px, 100% 0%, 100% 100%, 0% calc(100% - 55px));
 }
 
 .raiting-content{
@@ -73,9 +73,11 @@
 }
 
 .raiting-content.expand{
-   -webkit-clip-path: polygon(0% 0%, 100% 20px, 100% 99.6%, 0% 100%);
-           clip-path: polygon(0% 0%, 100% 20px, 100% 99.6%, 0% 100%);
+   -webkit-clip-path: polygon(0% 0%, 100% 20px, 100% calc(100% - 20px), 0% 100%);
+           clip-path: polygon(0% 0%, 100% 20px, 100% calc(100% - 20px), 0% 100%);
 }
+
+
 
 .raiting-title{
    margin-bottom: 60px;
@@ -340,15 +342,21 @@
    }
 
    .raiting-orange-background{
-      -webkit-clip-path: polygon(0% 20vw, 100% 0%, 100% 98%, 0% 94%);
-              clip-path: polygon(0% 20vw, 100% 0%, 100% 98%, 0% 94%);
+      -webkit-clip-path: polygon(0% 75px, 100% 0%, 100% 98%, 0% 94%);
+              clip-path: polygon(0% 75px, 100% 0%, 100% 98%, 0% 94%);
    }
 
    .raiting-background{
-      -webkit-clip-path: polygon(0% 0%, 100% 20vw, 100% 100%, 0% 100%);
-              clip-path: polygon(0% 0%, 100% 20vw, 100% 100%, 0% 100%);
+      -webkit-clip-path: polygon(0% 0%, 100% 75px, 100% 100%, 0% 100%);
+              clip-path: polygon(0% 0%, 100% 75px, 100% 100%, 0% 100%);
    }
 
+   .raiting-orange-background.expand{
+      background-color: rgba(255, 96, 0, 1);
+      -webkit-clip-path: polygon(0% 100px, 100% 0%, 100% calc(100% - 20px), 0% calc(100% - 45px));
+              clip-path: polygon(0% 100px, 100% 0%, 100% calc(100% - 20px), 0% calc(100% - 45px));
+   }
+   
    .raiting-title{
       margin-bottom: 40px;
    }

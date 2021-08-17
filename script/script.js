@@ -21,13 +21,13 @@ $(document).ready(function(){
          $(this).css('color','#000000')
     })
 
-    $('.menu ul li').click(function (e) {
-        let targetId=e.target.hash;
+    $('.menu ul li a').click(function (e) {
         e.preventDefault(); 
-        let top = $(targetId).offset().top; 
-        let documentHeight = document.body.clientHeight;
-        let aboutUsHeight = $(targetId).height();
-        $('html,body').scrollTop(top - documentHeight/2+aboutUsHeight/2);
+        let el=$( e.target.getAttribute('href') );
+        let top = el.offset().top; 
+        let windowHeight = $(window).height();
+        let elHeight = el.height();
+        $('html,body').scrollTop(top - windowHeight/2+elHeight/2);
    });
     
     $(document).on('scroll',function(e){

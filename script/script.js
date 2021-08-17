@@ -21,7 +21,7 @@ $(document).ready(function(){
          $(this).css('color','#000000')
     })
 
-    $('.menu ul li a').click(function (e) {
+    $('.menu ul li a').on('click', function (e) {
         e.preventDefault(); 
         let el=$( e.target.getAttribute('href') );
         let top = el.offset().top; 
